@@ -1,15 +1,34 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-	xmlns:h="http://xmlns.jcp.org/jsf/html"
-	xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+    <h:head>
+        <meta charset="utf-8" />
+        <meta name="author" content="GRUPO J" />
+        <title>ProyectoSII</title>
+        <link rel="stylesheet" href="CSS/principal.css"> </link>
+    </h:head>
 
-<h:head>
-	<title>Hola mundo</title>
-</h:head>
-<h:body>
-	<h1><h:outputText value="#{saludo.saludo}"/></h1>
-</h:body>
+    <h:body>
+        <h:div class="login-box">
+            <img class="avatar" src="img/logoUma.png" alt="logoUma"></img>
+            <h1>Iniciar sesión</h1>
+            <h:form>
+                <h:outputLabel for="username" value="Identificación"/>
+                <h:inputText type="text" placeholder="Introduzca identificador" value="#{usuario.identificador}"/>
+
+                <h:outputLabel for="password" value="Contraseña" />
+                <h:inputText type="password" placeholder="Introduzca contraseña" value="#{usuario.contrasena}"/>
+
+                <h:commandButton type="submit" value="Acceder" action="#{usuario.acceder}"/>
+
+                <h:commandLink href="registro.xhtml">No tengo cuenta</h:commandLink>
+            </h:form>
+        </h:div>
+        
+    </h:body>
+
 </html>
