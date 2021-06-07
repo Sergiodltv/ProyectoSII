@@ -27,8 +27,8 @@ import practicaSII.ejb.excetption.AlumnoNoEncontradoException;
 import practicaSII.ejb.excetption.TitulacionEncontradaException;
 import practicaSII.ejb.excetption.TitulacionNoEncontradaException;
 
-public class TitulacionTests {
-	private static final Logger LOG = Logger.getLogger(TitulacionTests.class.getCanonicalName());
+public class TitulacionTest {
+	private static final Logger LOG = Logger.getLogger(TitulacionTest.class.getCanonicalName());
 
 	private static final String GLASSFISH_CONFIGI_FILE_PROPERTY = "org.glassfish.ejb.embedded.glassfish.configuration.file";
 	private static final String CONFIG_FILE = "target/test-classes/META-INF/domain.xml";

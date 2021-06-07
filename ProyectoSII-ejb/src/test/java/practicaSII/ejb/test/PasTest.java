@@ -27,8 +27,8 @@ import practicaSII.ejb.excetption.AlumnoNoEncontradoException;
 import practicaSII.ejb.excetption.PasEncontradoException;
 import practicaSII.ejb.excetption.PasNoEncontradoException;
 
-public class PasTests {
-	private static final Logger LOG = Logger.getLogger(PasTests.class.getCanonicalName());
+public class PasTest {
+	private static final Logger LOG = Logger.getLogger(PasTest.class.getCanonicalName());
 
 	private static final String GLASSFISH_CONFIGI_FILE_PROPERTY = "org.glassfish.ejb.embedded.glassfish.configuration.file";
 	private static final String CONFIG_FILE = "target/test-classes/META-INF/domain.xml";

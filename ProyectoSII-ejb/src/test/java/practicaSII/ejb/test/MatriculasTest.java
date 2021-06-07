@@ -28,8 +28,8 @@ import practicaSII.ejb.excetption.AlumnoNoEncontradoException;
 import practicaSII.ejb.excetption.MatriculaEncontradaException;
 import practicaSII.ejb.excetption.MatriculaNoEncontradaException;
 
-public class MatriculasTests {
-	private static final Logger LOG = Logger.getLogger(MatriculasTests.class.getCanonicalName());
+public class MatriculasTest {
+	private static final Logger LOG = Logger.getLogger(MatriculasTest.class.getCanonicalName());
 
 	private static final String GLASSFISH_CONFIGI_FILE_PROPERTY = "org.glassfish.ejb.embedded.glassfish.configuration.file";
 	private static final String CONFIG_FILE = "target/test-classes/META-INF/domain.xml";

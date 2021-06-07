@@ -26,8 +26,8 @@ import practicaSII.ejb.excetption.AlumnoNoEncontradoException;
 import practicaSII.ejb.excetption.ExpedienteEncontradoException;
 import practicaSII.ejb.excetption.ExpedienteNoEncontradoException;
 
-public class ExpedientesTests {
-	private static final Logger LOG = Logger.getLogger(ExpedientesTests.class.getCanonicalName());
+public class ExpedientesTest {
+	private static final Logger LOG = Logger.getLogger(ExpedientesTest.class.getCanonicalName());
 
 	private static final String GLASSFISH_CONFIGI_FILE_PROPERTY = "org.glassfish.ejb.embedded.glassfish.configuration.file";
 	private static final String CONFIG_FILE = "target/test-classes/META-INF/domain.xml";

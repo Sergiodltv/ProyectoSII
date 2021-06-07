@@ -30,8 +30,8 @@ import practicaSII.ejb.excetption.AsignaturaEncontradaException;
 import practicaSII.ejb.excetption.AsignaturaNoEncontradaException;
 import practicaSII.ejb.excetption.OptativaNoEncontradaException;
 
-public class AsignaturasTests {
-	private static final Logger LOG = Logger.getLogger(AsignaturasTests.class.getCanonicalName());
+public class AsignaturasTest {
+	private static final Logger LOG = Logger.getLogger(AsignaturasTest.class.getCanonicalName());
 
 	private static final String GLASSFISH_CONFIGI_FILE_PROPERTY = "org.glassfish.ejb.embedded.glassfish.configuration.file";
 	private static final String CONFIG_FILE = "target/test-classes/META-INF/domain.xml";

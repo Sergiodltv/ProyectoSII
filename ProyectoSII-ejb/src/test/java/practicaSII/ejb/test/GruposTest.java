@@ -27,8 +27,8 @@ import practicaSII.ejb.excetption.AlumnoNoEncontradoException;
 import practicaSII.ejb.excetption.GrupoEncontradoException;
 import practicaSII.ejb.excetption.GrupoNoEncontradoException;
 
-public class GruposTests {
-	private static final Logger LOG = Logger.getLogger(GruposTests.class.getCanonicalName());
+public class GruposTest {
+	private static final Logger LOG = Logger.getLogger(GruposTest.class.getCanonicalName());
 
 	private static final String GLASSFISH_CONFIGI_FILE_PROPERTY = "org.glassfish.ejb.embedded.glassfish.configuration.file";
 	private static final String CONFIG_FILE = "target/test-classes/META-INF/domain.xml";
