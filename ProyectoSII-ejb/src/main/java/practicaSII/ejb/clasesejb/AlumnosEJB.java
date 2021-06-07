@@ -66,4 +66,10 @@ public class AlumnosEJB implements GestionAlumnos{
 		
 	}
 
+	@Override
+	public boolean estaAlumno(String documento) {
+		Alumno alumnoExistente = em.find(Alumno.class, documento);
+		return false;
+	}
+
 }

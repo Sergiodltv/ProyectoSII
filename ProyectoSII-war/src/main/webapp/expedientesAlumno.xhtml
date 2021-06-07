@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
       >
     <head>
         <meta charset="utf-8" />
         <meta name="author" content="GRUPO J" />
         <title>ProyectoSII</title>
-        <link rel="stylesheet" href="CSS/vistaAlumno.css"></link>
+        <link rel="stylesheet" type="text/css" href="./registro.css"> </link>
     </head>
 
     <body>
@@ -17,11 +16,11 @@
             <img class="avatar" src="img/logoUma.png" alt="logoUma" ></img>
             <h1>Bienvenido</h1>
             
-            <form>
-                <input type="submit" value="Expedientes"></input>
+            <h:form>
+                <h:commandButton type="submit" value="Expedientes"/>
 
-                <input type="submit" value="Encuestas disponibles"></input>
-            </form>
+                <h:commandButton type="submit" value="Hola"/>
+            </h:form>
         </div>
         
     </body>

@@ -3,9 +3,7 @@ package practicaSII.ejb.clasesejb;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.Reader;
 import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Row;
@@ -33,12 +31,11 @@ public class ImportarAsignaturaEJB {
 	}
 	
 	public void insertarDatos() {
-	
 		insertarAsigGrados();
-		insertarOptativasEx();
+		insertarOptativas();
 	}
 	
-	private void insertarOptativasEx() {
+	private void insertarOptativas() {
 		try {
 			FileInputStream excel = new FileInputStream(new File(fichero));
 			Workbook wk = new XSSFWorkbook(excel);
@@ -70,39 +67,7 @@ public class ImportarAsignaturaEJB {
 			
 		}
 	}
-	private void insertarOptativasCsv() {
-		try {
-			Reader r = new FileReader(fichero);
-			FileInputStream excel = new FileInputStream(new File(fichero));
-			Workbook wk = new XSSFWorkbook(excel);
-			for (int i = 0; i < 2; i++) {
-				Sheet sheet = wk.getSheetAt(i);
-				Iterator<Row> it = sheet.iterator();
-				it.next();
-				while(it.hasNext()) {
-					Row current = it.next();
-					Integer referencia = new Integer ((int)current.getCell(0).getNumericCellValue());
-					Integer plazas = new Integer ((int)current.getCell(1).getNumericCellValue());
-					String mencion = current.getCell(2).getStringCellValue();
-					if (mencion.equals("")) {mencion = "Informatica";}
-					Asignatura asignatura = asigEjb.obtenerAsignaturaConCodigo(referencia);
-					Optativa optativa = new Optativa(asignatura, plazas, mencion);
-					asigEjb.anyadirOptativa(optativa);
-				}	
-			}
-			
-			wk.close();
-			
-		}catch (FileNotFoundException e) {
-			
-		}catch (IOException e) {
-			
-		}catch (AsignaturaNoEncontradaException e) {
-			
-		}catch (OptativaNoEncontradaException e) {
-			
-		}
-	}
+	
 	private void insertarAsigGrados(){
 		try {
 			FileInputStream excel = new FileInputStream(new File(fichero));

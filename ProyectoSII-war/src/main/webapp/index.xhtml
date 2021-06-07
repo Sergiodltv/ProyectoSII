@@ -1,34 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
       >
-    <h:head>
+    <head>
         <meta charset="utf-8" />
         <meta name="author" content="GRUPO J" />
         <title>ProyectoSII</title>
-        <link rel="stylesheet" href="CSS/principal.css"> </link>
-    </h:head>
+        <link rel="stylesheet" type="text/css" href="./principal.css"> </link>
+    </head>
 
-    <h:body>
-        <h:div class="login-box">
-            <img class="avatar" src="img/logoUma.png" alt="logoUma"></img>
+    <body>
+        <div class="login-box">
+            <h:graphicImage class="avatar" library="images" name="logoUma.png" />
             <h1>Iniciar sesión</h1>
             <h:form>
                 <h:outputLabel for="username" value="Identificación"/>
-                <h:inputText type="text" placeholder="Introduzca identificador" value="#{usuario.identificador}"/>
+                <h:inputText type="text" placeholder="Introduzca identificador"/>
 
                 <h:outputLabel for="password" value="Contraseña" />
-                <h:inputText type="password" placeholder="Introduzca contraseña" value="#{usuario.contrasena}"/>
+                <h:inputText type="password" placeholder="Introduzca contraseña" />
 
-                <h:commandButton type="submit" value="Acceder" action="#{usuario.acceder}"/>
+                <h:commandButton type="submit" value="Acceder" action="#{usuario.acceder}" />
 
-                <h:commandLink href="registro.xhtml">No tengo cuenta</h:commandLink>
+                <h:link outcome="registro.xhtml" value="No tengo una cuenta"/>
             </h:form>
-        </h:div>
+        </div>
         
-    </h:body>
+    </body>
 
 </html>
