@@ -32,5 +32,10 @@
 	<classpathentry kind="lib" path="/home/alumno/Descargas/poi-bin-5.0.0-20210120/poi-5.0.0/poi-ooxml-full-5.0.0.jar"/>
 	<classpathentry kind="lib" path="/home/alumno/Descargas/poi-bin-5.0.0-20210120/poi-5.0.0/poi-ooxml-lite-5.0.0.jar"/>
 	<classpathentry kind="lib" path="/home/alumno/Descargas/poi-bin-5.0.0-20210120/poi-5.0.0/poi-scratchpad-5.0.0.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

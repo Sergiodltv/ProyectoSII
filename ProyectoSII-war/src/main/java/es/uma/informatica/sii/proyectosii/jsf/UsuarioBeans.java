@@ -45,7 +45,7 @@ public class UsuarioBeans{
 	}
 	
 	public String acceder() {
-		return "vistaAlumno.xhtml";
+		return "vistaSecretaria.xhtml";
 	}
 	
 }
